@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.polites.android.GestureImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/map"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.1"
+        gesture-image:strict="false" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/getPic"
+            android:text="查看入口照片"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView 
+        android:layout_height="10pt"
+        android:layout_width="fill_parent"/>
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="B楼入口示意图"
+        android:gravity="center"/>    <com.polites.android.GestureImageView
+        android:id="@+id/entrance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/b2"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.1"
+        gesture-image:strict="false" />
+
+</LinearLayout>
